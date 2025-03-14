@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--ställer in start scalen beroende på vilken plattforms som används-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> <!--bootstrap biblotek-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"> <!--boostrap ikoner biblotek-->
+        <link rel="stylesheet" href="css/projectwow.css"> <!--min egna css -->
+        <title>Project WoW</title>
+    </head>
+
+    <body>
+        <!--Header+bild-->
+        <header class="bg-dark text-light text-center"><!--kan använda text-center för att få texten i mitten-->
+            <div class="container-fluid"><!--använder fluid så att den sträcker sig utöver hela skärmen-->
+                <div class="row">
+                    <div class="col-1">
+                        <img src="/html/img/world-of-warcraft-logo-black-and-white.png" class="img-fluid" alt="a picture of world of warcrafts logo"> <!--använder img fluid så att den anpassar sig till min container-->
+                    </div>
+                    <div class="col">
+                        <h1>Project: World of <span class="text-primary">War</span><span class="text-danger">Craft</span></h1> <!--lite olika färger-->
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!--Navbar/Meny-->
+
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="/html/index.html"><span class="text-warning">World of Warcraft</span></a><!--har redan en return knapp men denna kan också användas som en "home" knapp-->
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+               aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/html/index.html">Home</a> <!--använd home som en return knapp(lägg till startsida)-->
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/html/alliance.html"><span class="text-primary">For the Allince!</span></a> <!--lägg till min egna alliance sida-->
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/html/horde.html"><span class="text-danger">For the Horde!</span></a> <!--lägg till min egna horde sida-->
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+          <!--huvud innehåll & två col-->
+
+          <section class="bg-dark text-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-8">
+                        <h2>Choose Your Faction</h2>
+                        <p class="lead">
+                            To create a new character, in keeping with the storyline of previous Warcraft games, players must choose between the
+                             opposing factions of the Alliance or the Horde; Pandaren, which were added in Mists of Pandaria, do not commit to a
+                              faction until after the starting zone is completed. Characters from the opposing factions can perform rudimentary communication
+                              (most often just "emotes"), but only members of the same faction can speak, mail, group and join guilds. 
+                              The player selects the new character's race, such as orcs or trolls for the Horde, or humans or dwarves for the Alliance.
+                              Players must select the class for the character, with choices such as mages, warriors, and priests available.
+                              Most classes are limited to particular races.
+                        </p>
+                        <p>
+                           <a href="https://en.wikipedia.org/wiki/World_of_Warcraft">Link to source</a> 
+                        </p>
+                    </div>
+                    <div class="col-4">
+                        <h2>Lore</h2>
+                        <p class="lead">
+                            Intent on settling in Durotar, Thrall's Horde expanded its ranks by inviting the undead Forsaken to join orcs, tauren, and trolls. 
+                            Meanwhile, dwarves, gnomes, and the ancient night elves pledged their loyalties to the Alliance, guided by the human kingdom of Stormwind.
+                             After Stormwind's king, Varian Wrynn, mysteriously disappeared, Highlord Bolvar Fordragon served as Regent but his service was affected by
+                              the mind control of the black dragon Onyxia, who ruled in disguise as a human noblewoman. As heroes investigated Onyxia's manipulations, 
+                              the ancient elemental lord Ragnaros resurfaced to endanger both the Horde and Alliance.The heroes of the Horde and Alliance defeated Onyxia 
+                              and sent Ragnaros back to the Elemental Plane.
+                        </p>
+                        <p>
+                            <a href="https://en.wikipedia.org/wiki/World_of_Warcraft">Link to source</a>
+                        </p>
+                        <img src="/html/img/hordevsally.jpg" class="img-fluid" alt="a picture of the two factions ingame"> <!--använder en jpg istället för en png här -->
+                    </div>
+                </div>
+            </div>
+          </section>
+
+          <!--En bild + lite text-->
+
+          <section class="bg-dark text-light">
+            <div class="container"><!--använder inte fluid här-->
+                <div class="row d-flex justify-content-center text-center"> <!--gör min parent element till en flexbox för att kunna centrera mina objekt-->
+                    <div class="col-6">
+                        <h4>Join the battle to defeat Arthas The Lich King</h4>
+                        <img src="/html/img/arthas.png" class="img-fluid" alt="a picture of arthas">
+                    </div>
+                </div>
+            </div>
+          </section>
+
+          <!--Footer-->
+          <footer class="p-3 text-light-emphasis bg-dark-subtle border-dark-subtle roundend-3 text-center">
+            <div class="container"> <!--tillfälligborder-->
+                <p class="lead"><i class="bi bi-c-circle p-2"></i>I have nothing fun to show in this footer, except a fancy copyright-icon</p>
+            </div>
+          </footer>
+
+
+
+                <!--script som tillhör bootstrap-->
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+                integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+                </script>
+    </body>
+</html>

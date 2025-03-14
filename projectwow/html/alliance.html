@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--ställer in start scalen beroende på vilken plattforms som används-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> <!--bootstrap biblotek-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"> <!--boostrap ikoner biblotek-->
+        <link rel="stylesheet" href="css/projectwow.css"> <!--min egna css -->
+        <title>Project WoW: Alliance</title>
+    </head>
+    <body>
+        <!--Header + bild-->
+
+        <header class="bg-dark text-light text-center">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col">
+                        <h1>For The <span class="text-primary">Alliance</span></h1>
+                    </div>
+                    <div class="col">
+                        <img src="/html/img/alliance.png" class="img-fluid" alt="a picture of an alliance character">
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        
+        <!--Navbar/Meny-->
+
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="/html/index.html"><span class="text-warning">World of Warcraft</span></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+               aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/html/index.html">Home</a> <!--använd home som en return knapp(lägg till startsida)-->
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/html/alliance.html"><span class="text-primary">For the Allince!</span></a> <!--lägg till min egna alliance sida-->
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/html/horde.html"><span class="text-danger">For the Horde!</span></a> <!--lägg till min egna horde sida-->
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          
+          <!--huvud innehåll-->
+
+          <section class="bg-dark text-primary">
+            <div class="container-fluid">
+                <div class="row d-flex justify-content-start">
+                    <div class="col-5">
+                        <img src="/html/img/jaina.jpg" class="img-fluid" alt="a picture of Jaina">
+                    </div>
+                    <div class="col">
+                        <h2>Alliance Lore</h2>
+                        <p class="lead">
+                            Humans, night elves, dwarves, gnomes, draenei, and the savage worgen make up the illustrious Alliance. Proud and noble, courageous and wise, 
+                            these races work together to preserve order in Azeroth. The Alliance is driven by honor and tradition. Its rulers are champions of justice, hope,
+                            knowledge, and faith.
+                            In a time when chaos and uncertainty reign, the Alliance remains steadfast in its determination to bring light to the darkest corners of the world.
+                        </p>
+                        <p>
+                           <a href="https://wowpedia.fandom.com/wiki/Alliance">Link to source</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+          </section>
+
+          <!--en till bild-->
+          
+          <section class="bg-dark p-5 text-end">
+            <div class="container-fluid">
+                <div class="row">
+                        <div class="col">
+                            <img src="/html/img/sylvanass.jpg" class="img-fluid w-50" alt="a picture of Sylvanass"> 
+                        </div>
+                    </div>
+                </div>
+              </section>
+
+          <!--Footer-->
+          <footer class="p-3 text-light-emphasis bg-dark-subtle border-dark-subtle roundend-3 text-center">
+            <div class="container"> <!--tillfälligborder-->
+                <p class="lead"><i class="bi bi-c-circle p-2"></i>I have nothing fun to show in this footer, except a fancy copyright-icon</p>
+            </div>
+          </footer>
+
+                        <!--script som tillhör bootstrap-->
+                        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+                        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+                        </script>
+    </body>
